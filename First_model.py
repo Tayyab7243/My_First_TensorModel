@@ -28,7 +28,7 @@ image_extensions = ['jpeg', 'jpg', 'png', 'bmp']
 #         print(img)
 
 
-# image = cv2.imread(os.path.join('images', '4', 'ssj4.jpg'))
+
 
 
 # plt.imshow(cv2.cvtColor(image, cv2.COLOR_BGR2RGB))
@@ -135,9 +135,7 @@ pre = precision_score(y_true, y_pred, average='macro')
 re = recall_score(y_true, y_pred, average='macro')
 acc = accuracy_score(y_true, y_pred)
 
-# print(f'Precision: {pre}, Recall: {re}, Accuracy: {acc}')
 
-# img = cv2.imread('ssj4 test.jpeg')
 
 
 # resize = tf.image.resize(img, (256, 256))
@@ -163,4 +161,5 @@ yhat = model.predict(input)
 #Saving the model
 from keras.models import load_model
 model.save(os.path.join('Completed_Models', 'image_Classification.keras'))
+
 
